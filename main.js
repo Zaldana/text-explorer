@@ -54,10 +54,10 @@ Sincerely,\n\
 Atticus\n\
 \n\
 \n\
-When you arrived, the mansion doors were wide open, and you stepped\n\
+When you arrive, the mansion doors were wide open, and you stepped\n\
 into the dark and empty front room. You close the doors behind you\n\
 and turn on your flashlight. You need to find Atticus and help him\n\
-and stop whatever the Braithwhite family is planning.\n\
+stop whatever the Braithwhite family is planning.\n\
 \n\
 press ENTER to START");
  
@@ -77,22 +77,22 @@ while (location !== "Secret Lab") {
 
   if (start === "west") {
     
-        x = x - 3;  
+        x = x - 4;  
 
     }
        
     if (start === "east") { 
 
-       x = x + 3;
+       x = x + 4;
 
     } if (start === "north") {
 
-        y = y + 3;
+        y = y + 4;
         
 
     } if (start === "south") { 
 
-        y = y - 3;
+        y = y - 4;
         
     }
 
@@ -164,7 +164,7 @@ WEST, is an ornate door with a brass plaque that reads STUDY";
     if (x >= -10 && x <= -6 && y >= -6 && y <= -2) {
         
         location = "\n\
-You are in the study; you notice a cigar still burning in\n\
+You are in the STUDY; you notice a cigar still burning in\n\
 an ashtray next to a leather chair. You are not alone in this\n\
 house. You notice a closed book on the large oak desk on the\n\
 opposite side of the room. The gold letters of the cover reflect\n\
@@ -236,19 +236,22 @@ WEST, through a window all you see is darkness.";
     if (x >= -10 && x <= -6 && y >= -2 && y <= 2) {
         
         location = "\n\
-There is a billiards table in the middle of the room.\n\
-In each of the corner pockets you find a severed foot.\n\
-The fabric of the table is stained with blood. There are\n\
-symbols painted on the walls with blood. You notice rusty\n\
-chains hanging from the walls. At the end of the chains,\n\
-you find sharp metal hooks dripping with more blood.\n\
-The room smells like pennies and the vomit you were unable\n\
-to hold back.\n\
+You are in the GAMES ROOM; there is a billiards table in\n\
+the middle of the room. In each of the corner pockets you\n\
+find a severed foot. The fabric of the table is stained\n\
+with blood. There are symbols painted on the walls with\n\
+blood. You notice rusty chains hanging from the walls.\n\
+At the end of the chains, you find sharp metal hooks\n\
+dripping with more blood. The room smells like pennies\n\
+and the vomit you were unable to hold back.\n\
 \n\
 NORTH, You hear voices coming from a bookshelf.\n\
 \n\
 EAST, You hear strange music.\n\
-";
+\n\
+SOUTH, is a door that leads to the study\n\
+\n\
+WEST, through a window all you see is darkness.";
     
     }
 
@@ -446,7 +449,9 @@ loop in the dark void";
 const end = multiLinePrompt("\n\
 You found a fake wall and entered a secret lab.\n\
 In the center of the room, you see the Braithwhite family\n\
-chanting in unison they are wearing yellow robes.\n\
+chanting in unison they are wearing yellow robes. Christopher\n\
+Braithwhite, head of the Braithwhite family, is standing at an\n\
+altar made of rat skelletons, reading from a large and old book\n\
 They are surrounding Atticus who is chained up, he alternates\n\
 from laughter to soft whimpers, you fear his mind is gone.\n\
 A few of their members noticed you immediately.\n\
@@ -474,7 +479,8 @@ room you examined the t Atticus is in the corner of the room\n\
 whimpering, you fear his mind is gone. tome that you took from\n\
 the mansion. There was a single word on the cover NECRONOMICON.\n\
 You sigh and dare not think of the terror you prevented from\n\
-entering our world.");
+entering our world.\n\
+");
 
 }
 
@@ -488,6 +494,7 @@ and Cthulhu awoke.\n\
 You now live in what remains of society. The world has been\n\
 consumed by the spawn of Cthulhu and all that remains of\n\
 humanity are the wandering madmen who have yet to be consumed,\n\
-and you.");
+and you.\n\
+");
 
 }
